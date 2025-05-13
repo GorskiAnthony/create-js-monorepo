@@ -33,7 +33,7 @@ jobs:
                   username: ${{ secrets.SSH_USER }}
                   password: ${{ secrets.SSH_PASSWORD }}
                   script: |
-                      bash ~/traefik/deploy/deploy.sh \
+                      bash ~/traefik/deploy/js-project-docker.sh \
                         "${{ github.repository_owner }}" \
                         "${{ github.event.repository.name }}" \
                         "${{ vars.PROJECT_NAME }}" \
